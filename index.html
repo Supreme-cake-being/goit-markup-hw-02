@@ -4,32 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Studio</title>
   </head>
 
   <body>
     <header>
-      <nav class="site-nav">
-        <a href="/" class="logo"><span>web</span>studio</a>
+      <nav>
+        <a href="./index.html" class="logo"
+          >web<span class="logo-header">studio</span></a
+        >
 
-        <ul>
-          <li><a href="">Studio</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+        <ul class="site-nav list">
+          <li><a href="" class="link">Studio</a></li>
+          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="" class="link">Contacts</a></li>
         </ul>
       </nav>
 
       <address class="contacts">
-        <ul class="contacts-list">
+        <ul class="list">
           <li>
-            <a href="mailto:info@devstudio.com" class="contacts-list-item"
+            <a href="mailto:info@devstudio.com" class="link contacts-link"
               >info@devstudio.com</a
             >
           </li>
 
           <li>
-            <a href="tel:+110001111111" class="contacts-list-item"
+            <a href="tel:+110001111111" class="link contacts-link"
               >+11 (000) 111-11-11</a
             >
           </li>
@@ -40,41 +50,41 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <button type="button" class="button">Order Service</button>
       </section>
 
       <!-- Our features -->
-      <section class="features">
-        <h2>Our features</h2>
+      <section class="section">
+        <h2 class="section-title hidden">Our features</h2>
 
-        <ul class="features-list">
-          <li class="features-list-item">
-            <h3>Strategy</h3>
+        <ul class="feature-list list">
+          <li class="feature-list-item">
+            <h3 class="title">Strategy</h3>
             <p>
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
 
-          <li class="features-list-item">
-            <h3>Punctuality</h3>
+          <li class="feature-list-item">
+            <h3 class="title">Punctuality</h3>
             <p>
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
 
-          <li class="features-list-item">
-            <h3>Diligence</h3>
+          <li class="feature-list-item">
+            <h3 class="title">Diligence</h3>
             <p>
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
 
-          <li class="features-list-item">
-            <h3>Technologies</h3>
+          <li class="feature-list-item">
+            <h3 class="title">Technologies</h3>
             <p>
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
@@ -84,13 +94,13 @@
       </section>
 
       <!-- What are we doing -->
-      <section class="doing">
-        <h2>What are we doing</h2>
+      <section class="section">
+        <h2 class="section-title">What are we doing</h2>
 
-        <ul class="doing-list">
+        <ul class="list">
           <li class="doing-list-item">
             <img
-              src="./images/section-2/computer.jpg"
+              src="./images/main_page/section-2/computer.jpg"
               alt="Computer"
               width="360"
             />
@@ -98,7 +108,7 @@
 
           <li class="doing-list-item">
             <img
-              src="./images/section-2/displays.jpg"
+              src="./images/main_page/section-2/displays.jpg"
               alt="Displays"
               width="360"
             />
@@ -106,7 +116,7 @@
 
           <li class="doing-list-item">
             <img
-              src="./images/section-2/working_place.jpg"
+              src="./images/main_page/section-2/working_place.jpg"
               alt="Working Place"
               width="360"
             />
@@ -115,13 +125,13 @@
       </section>
 
       <!-- Team -->
-      <section class="team">
-        <h2>Our Team</h2>
+      <section class="section">
+        <h2 class="section-title">Our Team</h2>
 
-        <ul class="team-list">
+        <ul class="list">
           <li class="team-list-item">
             <img
-              src="./images/section-3/mark_guerrero.jpg"
+              src="./images/main_page/section-3/mark_guerrero.jpg"
               alt="Photo of Mark Guerrero"
               width="264"
             />
@@ -131,7 +141,7 @@
 
           <li class="team-list-item">
             <img
-              src="./images/section-3/tom_ford.jpg"
+              src="./images/main_page/section-3/tom_ford.jpg"
               alt="Photo of Tom Ford"
               width="264"
             />
@@ -141,7 +151,7 @@
 
           <li class="team-list-item">
             <img
-              src="./images/section-3/camila_garcia.jpg"
+              src="./images/main_page/section-3/camila_garcia.jpg"
               alt="Photo of Camila Garcia"
               width="264"
             />
@@ -151,7 +161,7 @@
 
           <li class="team-list-item">
             <img
-              src="./images/section-3/daniel_wilson.jpg"
+              src="./images/main_page/section-3/daniel_wilson.jpg"
               alt="Photo of Daniel Wilson"
               width="264"
             />
@@ -163,7 +173,9 @@
     </main>
 
     <footer>
-      <a href="/" class="logo"><span>web</span>studio</a>
+      <a href="./index.html" class="logo"
+        >web<span class="logo-footer">studio</span></a
+      >
       <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
